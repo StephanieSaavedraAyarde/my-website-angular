@@ -2,10 +2,10 @@
   <carousel>
     <slide>
       <img
-        src="assets/img/home/2021top.jpg"
+        src="https://1.bp.blogspot.com/-GQJ7uTsjGug/XJOlhgWzKOI/AAAAAAAAC8k/eCEVwTYpOtUsuYRzfoxt4mz_nkbehRjMACLcBGAs/s1600/Tecnologia%2B%25281%2529.jpg"
         srcset="
-          assets/img/home/2021top.jpg 320w,
-          assets/img/home/2021top.jpg 640w
+          https://1.bp.blogspot.com/-GQJ7uTsjGug/XJOlhgWzKOI/AAAAAAAAC8k/eCEVwTYpOtUsuYRzfoxt4mz_nkbehRjMACLcBGAs/s1600/Tecnologia%2B%25281%2529.jpg 320w,
+          https://1.bp.blogspot.com/-GQJ7uTsjGug/XJOlhgWzKOI/AAAAAAAAC8k/eCEVwTYpOtUsuYRzfoxt4mz_nkbehRjMACLcBGAs/s1600/Tecnologia%2B%25281%2529.jpg 640w
         "
         sizes="50vw"
         [style.max-height]="isMobile ? '200px' : '400px'"
@@ -16,7 +16,7 @@
     </slide>
     <slide>
       <img
-        src="assets/img/home/macsurfacelong.jpg"
+        src="https://cdn-3.expansion.mx/dims4/default/b1b94b9/2147483647/strip/true/crop/1000x525+0+73/resize/1200x630!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff0%2F1d%2Fd0b7fd994e67a9f48564db5f7507%2Fistock-856757428-copy.jpg"
         alt="Second slide"
         class="center-block"
         [style.max-height]="isMobile ? '200px' : '400px'"
@@ -27,7 +27,7 @@
     </slide>
     <slide>
       <img
-        src="assets/img/home/room.jpg"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbQ7lVZcZWv53-9zijPpkWt2Yd05kGQdtRRrRnIUDEgjDhmAD4wrVKk37O5aY1vUWwOXo&usqp=CAU"
         alt="Third slide"
         class="center-block"
         [style.max-height]="isMobile ? '200px' : '400px'"
@@ -44,21 +44,40 @@
 <div class="container">
   <div class="card">
     <h5 class="card-header">Perfil del Estudiante&nbsp;</h5>
-
-    <div *ngIf="currentLang==='en'; else jaNews">
-      <div *ngFor="let one_news of getRecentNews(5)">
-        <div class="card-body">
-          <div class="card-title"></div>
+    <div class="container">
+      <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="contentResp">
+        <div class="blocks" fxFlex>
+          <br /><br />
+          <img style="width:500px; height:400px" src="https://imagenes.elpais.com/resizer/l2aQ5r7wglTQPkmVy9EouG86q8U=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/7XNTOWE2OREXBMWP6LOLYNAKI4.jpg" alt="head" />
+        </div>
+        <div class="blocks" fxFlex>
+          <br />
+          <h4>¿Cual es el perfil del estudiante?</h4>
+          <br />
+          <p>
+            Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum
+            Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum
+            Loren Ipsum
+          </p>
+          <ul>
+            <li>
+              <span>Loren Ipsum Loren Ipsum Loren Ipsum</span>
+            </li>
+            <li>
+              <span>Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum</span>
+            </li>
+            <li>
+              <span
+            >Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum</span>
+            </li>
+            <li>
+              <span>Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum Loren Ipsum</span>
+            </li>
+          </ul>
         </div>
       </div>
-      <ng-template #jaNews>
-        <div *ngFor="let one_news of getRecentNews(5)">
-          <div class="card-body">
-            <div class="card-title"></div>
-          </div>
-        </div>
-      </ng-template>
     </div>
+
   </div>
 
   <br /><br /><br />
