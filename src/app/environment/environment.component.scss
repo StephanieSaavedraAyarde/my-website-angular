@@ -5,7 +5,8 @@
 .blocks p {
   text-align: left;
 }
-.blocks h3, h4 {
+.blocks h3,
+h4 {
   font-weight: bold;
   text-align: center;
 }
@@ -17,8 +18,8 @@
   text-align: center;
 }
 .circle img {
-  width:180px;
-  height:180px;
+  width: 180px;
+  height: 180px;
   border-radius: 180px;
   -webkit-border-radius: 180px;
   -moz-border-radius: 180px;
@@ -38,7 +39,7 @@
 }
 
 .jumbotron {
-  background: url("../../assets/img/research/head.jpg") center;
+  background: url('../../assets/img/research/head.jpg') center;
   min-width: 40%;
   background-size: cover;
   max-height: 32vh;
@@ -48,10 +49,10 @@
   color: rgb(253, 253, 253);
   text-align: left;
   background-color: rgb(87, 82, 82);
-  background: rgba(45,45,45, 0.01);
+  background: rgba(45, 45, 45, 0.01);
 }
 
-.lead, .display-4 {
+.lead,
+.display-4 {
   text-shadow: 1.5px 1.5px 2px #999999;
 }
-
