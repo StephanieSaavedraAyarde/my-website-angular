@@ -1,52 +1,24 @@
 <div class="navbar-header nav-not-mobile" *ngIf="isMobile === false">
-  <nav
-    class="navbar site-header sticky-top navbar-light style=background-color:#005684;"
-  >
+  <nav class="navbar site-header sticky-top navbar-light style=background-color:#005684;">
     <a class="navbar-brand" routerLink="/home" [queryParams]="{lang: lang}">
       <img
-        src="assets/img/k_logo2_white.png"
+        src="src/ap/assets/img/logo.png"
         width="99%"
         height="auto"
         alt="logo"
       />
     </a>
     <tabset>
-      <tab
-        heading="Home"
-        id="home"
-        (select)="clickTab('/home')"
-        [active]="location.path()=='/home'"
-      ></tab>
-      <tab
-        heading="Sobre Nosotros"
-        id="about"
-        (select)="clickTab('/about')"
-        [active]="location.path()=='/about'"
-      ></tab>
-      <tab
-        heading="Oportunidades"
-        id="activity"
-        (select)="clickTab('/activity')"
-        [active]="location.path()=='/activity'"
-      ></tab>
-      <tab
-        heading="Investigacion"
-        id="research"
-        (select)="clickTab('/research')"
-        [active]="location.path()=='/research'"
-      ></tab>
-      <tab
-        heading="Publicaciones"
-        id="publication"
-        (select)="clickTab('/publication')"
-        [active]="location.path()=='/publication'"
-      ></tab>
-      <tab
-        heading="Contactanos"
-        id="contact"
-        (select)="clickTab('/contact')"
-        [active]="location.path()=='/contact'"
-      ></tab>
+      <tab heading="Home" id="home" (select)="clickTab('/home')" [active]="location.path()=='/home'"></tab>
+      <tab heading="Sobre Nosotros" id="about" (select)="clickTab('/about')" [active]="location.path()=='/about'"></tab>
+      <tab heading="Oportunidades" id="activity" (select)="clickTab('/activity')"
+        [active]="location.path()=='/activity'"></tab>
+      <tab heading="Investigacion" id="research" (select)="clickTab('/research')"
+        [active]="location.path()=='/research'"></tab>
+      <tab heading="Publicaciones" id="publication" (select)="clickTab('/publication')"
+        [active]="location.path()=='/publication'"></tab>
+      <tab heading="Contactanos" id="contact" (select)="clickTab('/contact')" [active]="location.path()=='/contact'">
+      </tab>
     </tabset>
   </nav>
 </div>
