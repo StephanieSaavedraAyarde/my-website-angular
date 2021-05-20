@@ -1,0 +1,336 @@
+<br />
+<div class="container">
+  <p style="text-align: center; font-style: oblique;">
+    Dentro de la universidad tenemos los mejores ambientes pensando siempre en
+    tu aprendizaje y en tu bienestar!
+  </p>
+</div>
+
+<div class="container">
+  <div
+    fxLayout="row"
+    fxLayout.xs="column"
+    fxLayout.sm="column"
+    fxFlex
+    class="contentResp"
+  >
+    <div class="blocks" fxFlex>
+      <br />
+      <h4>Laboratorios</h4>
+      <div class="circle">
+        <button
+          type="button"
+          class="btn btn-default"
+          (click)="detailModal1.show()"
+        >
+          <br /><img src="assets/img/env/imacpc.jpg" alt="Second" />
+        </button>
+      </div>
+    </div>
+    <div class="blocks" fxFlex>
+      <br />
+      <h4>Imprentas</h4>
+      <div class="circle">
+        <button
+          type="button"
+          class="btn btn-default"
+          (click)="detailModal2.show()"
+        >
+          <br /><img
+            src="assets/img/env/p3d.jpg"
+            alt="Second"
+            class="center-block"
+          />
+        </button>
+      </div>
+    </div>
+    <div class="blocks" fxFlex>
+      <br />
+      <h4>Biblioteca</h4>
+      <div class="circle">
+        <button
+          type="button"
+          class="btn btn-default"
+          (click)="detailModal3.show()"
+        >
+          <br /><img
+            src="assets/img/env/books.jpg"
+            alt="Second"
+            class="center-block"
+          />
+        </button>
+      </div>
+    </div>
+    <div class="blocks" fxFlex>
+      <br />
+      <h4>Salas de dascanso</h4>
+      <div class="circle">
+        <button
+          type="button"
+          class="btn btn-default"
+          (click)="detailModal4.show()"
+        >
+          <br /><img
+            src="assets/img/env/pod.jpg"
+            alt="Second"
+            class="center-block"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  bsModal
+  #detailModal1="bs-modal"
+  [config]="{backdrop: 'true'}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Laboratorios Equipados</h4>
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="detailModal1.hide()"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div
+            fxLayout="row"
+            fxLayout.xs="column"
+            fxLayout.sm="column"
+            fxFlex
+            class="contentResp"
+          >
+            <div class="blocks" fxFlex>
+              <img
+                src="assets/img/env/macsurface.jpg"
+                width="200px"
+                height="160px"
+              />
+            </div>
+            <br />
+            <div class="blocks" fxFlex>
+              <img src="assets/img/env/imac.jpg" width="200px" height="160px" />
+            </div>
+            <br />
+          </div>
+          <br />
+        </div>
+        <p>
+          <br />
+          <span>
+            Dentro de la universidad tenemos los mejores espacios para ti,
+            laboratorios con dispositivos de ultima generacion para poder
+            contribuir a tu educacion
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  bsModal
+  #detailModal2="bs-modal"
+  [config]="{backdrop: 'true'}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">
+          Imprentas y Salas de Soporte Tecnico
+        </h4>
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="detailModal2.hide()"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div
+            fxLayout="row"
+            fxLayout.xs="column"
+            fxLayout.sm="column"
+            fxFlex
+            class="contentResp"
+          >
+            <div class="blocks" fxFlex>
+              <img
+                src="assets/img/env/print3D.jpg"
+                width="200px"
+                height="160px"
+              />
+            </div>
+            <br />
+            <div class="blocks" fxFlex>
+              <img src="assets/img/env/tv.jpg" width="200px" height="160px" />
+            </div>
+            <br />
+          </div>
+          <br />
+        </div>
+        <p>
+          <br />
+          <span>
+            Queremos que tengas todas las facilidades, es por eso que
+            habilitamos salas de imprentas y salas de ayuda tecnica. Puedes
+            asistir a ellos en cualquier momento, el centro de computo siempre
+            esta disponible a todos nuestros estudiantes.
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  bsModal
+  #detailModal3="bs-modal"
+  [config]="{backdrop: 'true'}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Biblioteca</h4>
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="detailModal3.hide()"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div
+            fxLayout="row"
+            fxLayout.xs="column"
+            fxLayout.sm="column"
+            fxFlex
+            class="contentResp"
+          >
+            <div class="blocks" fxFlex>
+              <img
+                src="assets/img/env/iotbooks.jpg"
+                width="200px"
+                height="160px"
+              />
+            </div>
+            <br />
+            <div class="blocks" fxFlex>
+              <img
+                src="assets/img/env/multibooks.jpg"
+                width="200px"
+                height="160px"
+              />
+            </div>
+            <br />
+          </div>
+          <br />
+        </div>
+        <p>
+          <br />
+          <span>
+            La universidad cuenta con una de las mejores bibliotecas de la
+            region, contamos con salas de estudio y una buena Hemeroteca donde
+            ante cualquier duda puedes consultar en los libros idigtales o en
+            los libros fisicos que tenemos disponibles.
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  bsModal
+  #detailModal4="bs-modal"
+  [config]="{backdrop: 'true'}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Salas de descanso</h4>
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="detailModal4.hide()"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div
+            fxLayout="row"
+            fxLayout.xs="column"
+            fxLayout.sm="column"
+            fxFlex
+            class="contentResp"
+          >
+            <div class="blocks" fxFlex>
+              <img
+                src="assets/img/env/cleaner.jpg"
+                width="200px"
+                height="160px"
+              />
+            </div>
+            <br />
+            <div class="blocks" fxFlex>
+              <img
+                src="assets/img/env/coffee.jpg"
+                width="200px"
+                height="160px"
+              />
+            </div>
+            <br />
+          </div>
+          <br />
+        </div>
+        <p>
+          <br />
+          <span>
+            Nos preocupamos por ti, sabemos que tambien necesitas espacios
+            recreativos y salas de descanso. Es por eso que habilitamos salas de
+            descanso donde puedes descansar o estar en tus tiempos libres.
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br /><br /><br />
