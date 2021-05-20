@@ -35,7 +35,6 @@ import { StudentService } from './student.service';
 
 import { KeyvaluesPipe } from './keyvalues.pipe';
 import { ConsoleLogPipe } from './console-log.pipe';
-import { ThesisService } from './thesis.service';
 import { ActivityDetailsComponent } from './activity-details/activity-details.component';
 import { NewsComponent } from './news/news.component';
 
@@ -91,7 +90,6 @@ export function createTranslateLoader(http: HttpClient) {
   providers: [
     StudentService,
     PublicationService,
-    ThesisService,
     NewsService,
     DataService,
     DeviceService

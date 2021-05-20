@@ -1,134 +1,239 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h2 class="display-4">Centros de Investigacion</h2>
-    <p class="lead" translate>主な研究分野はテスト/モデル検査/SPLです。</p>
+    <h2 style="color: #0B3861; font-size:50px">Centros de Investigacion</h2>
+    <p style="color: #0B3861; font-size:20px">
+      Centros de investigacion de alto nivel
+    </p>
   </div>
 </div>
-
 
 <div class="container">
-  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="contentResp">
+  <div
+    fxLayout="row"
+    fxLayout.xs="column"
+    fxLayout.sm="column"
+    fxFlex
+    class="contentResp"
+  >
     <div class="blocks" fxFlex>
-      <br/><br/><h4>Testing</h4>
+      <br /><br />
+      <h4>Sociedades Cientifcas</h4>
       <div class="circle">
-        <button type="button" class="btn btn-default" (click)="detailModal1.show()">
-          <br/><img src="assets/img/research/test.jpg" alt="Second">
+        <button
+          type="button"
+          class="btn btn-default"
+          (click)="detailModal1.show()"
+        >
+          <br /><img src="assets/img/research/test.jpg" alt="Second" />
         </button>
       </div>
     </div>
     <div class="blocks" fxFlex>
-      <br/><br/><h4>Model Checking</h4>
+      <br /><br />
+      <h4>Rama Estudiantil</h4>
       <div class="circle">
-        <button type="button" class="btn btn-default" (click)="detailModal2.show()">
-          <br/><img src="assets/img/research/modelcheck.jpg" alt="Second" class="center-block">
+        <button
+          type="button"
+          class="btn btn-default"
+          (click)="detailModal2.show()"
+        >
+          <br /><img
+            src="assets/img/research/modelcheck.jpg"
+            alt="Second"
+            class="center-block"
+          />
         </button>
       </div>
     </div>
     <div class="blocks" fxFlex>
-      <br/><br/><h4>SPL</h4>
+      <br /><br />
+      <h4>Centros de Estudiantes</h4>
       <div class="circle">
-        <button type="button" class="btn btn-default" (click)="detailModal3.show()">
-          <br/><img src="assets/img/research/feature.png" alt="Second" class="center-block">
+        <button
+          type="button"
+          class="btn btn-default"
+          (click)="detailModal3.show()"
+        >
+          <br /><img
+            src="assets/img/research/feature.png"
+            alt="Second"
+            class="center-block"
+          />
         </button>
       </div>
     </div>
     <div class="blocks" fxFlex>
-      <br/><br/><h4>Other Technologies</h4>
+      <br /><br />
+      <h4>Investigacion Docente</h4>
       <div class="circle">
-        <button type="button" class="btn btn-default" (click)="detailModal4.show()">
-          <br/><img src="assets/img/research/VR.jpg" alt="Second" class="center-block">
+        <button
+          type="button"
+          class="btn btn-default"
+          (click)="detailModal4.show()"
+        >
+          <br /><img
+            src="assets/img/research/VR.jpg"
+            alt="Second"
+            class="center-block"
+          />
         </button>
       </div>
     </div>
   </div>
 </div>
 
-
-<!-- Modal -->
-<div class="modal fade" bsModal #detailModal1="bs-modal" [config]="{backdrop: 'true'}"
-     tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  bsModal
+  #detailModal1="bs-modal"
+  [config]="{backdrop: 'true'}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title pull-left" translate>Testing(テスト)</h4>
-        <button type="button" class="close pull-right" aria-label="Close" (click)="detailModal1.hide()">
+        <h4 class="modal-title pull-left" translate>Sociedades Cientifcas</h4>
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="detailModal1.hide()"
+        >
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img src="assets/img/research/vwater.png" width="300px" height="auto">
-        <br/><br/><br/>
+        <img src="assets/img/research/vwater.png" width="300px" height="auto" />
+        <br /><br /><br />
         <p translate>
-          近年、ソフトウェア開発の期間は短くなってきています。 その中で品質を確保するために「ソフトウェアテスト」の重要性は大きくなっています。 そのようなソフトウェアテストはソフトウェア工学の一部であり欠かかせない分野となっています。近年はWebアプリケーションを対象としたテストなどについても研究を行なっています。
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+          ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+          ipsum
         </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" bsModal #detailModal2="bs-modal" [config]="{backdrop: 'true'}"
-     tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  bsModal
+  #detailModal2="bs-modal"
+  [config]="{backdrop: 'true'}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title pull-left" translate>Model Checking(モデル検査)</h4>
-        <button type="button" class="close pull-right" aria-label="Close" (click)="detailModal2.hide()">
+        <h4 class="modal-title pull-left" translate>
+          Rama Estudiantil
+        </h4>
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="detailModal2.hide()"
+        >
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img src="assets/img/research/about2.png" width="300px" height="auto">
-        <br/><br/>
+        <img src="assets/img/research/about2.png" width="300px" height="auto" />
+        <br /><br />
         <p translate>
-          ソフトウェア設計の正しさを確認するためには手作業では不十分かつ非効率です。例えばモデル検査技術と呼ばれる形式手法を適用することで、信頼度向上かつより少ない人手で設計検証を行えると期待できます。そうした手法を実際のソフトウェア開発において活用するための手法などについて研究しています。
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+          ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+          ipsum
         </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" bsModal #detailModal3="bs-modal" [config]="{backdrop: 'true'}"
-     tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  bsModal
+  #detailModal3="bs-modal"
+  [config]="{backdrop: 'true'}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title pull-left" translate>SPL(ソフトウェアプロダクトライン)</h4>
-        <button type="button" class="close pull-right" aria-label="Close" (click)="detailModal3.hide()">
+        <h4 class="modal-title pull-left">
+          Centros de estudiantes
+        </h4>
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="detailModal3.hide()"
+        >
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img src="assets/img/research/about3.png" width="300px" height="auto">
-        <br/><br/>
+        <img src="assets/img/research/about3.png" width="300px" height="auto" />
+        <br /><br />
         <p translate>
-          一定の共通性を持った製品群を全体最適の観点から捉え、戦略的・体系的に開発するアプローチがソフトウェアプロダクトライン開発です。その実現には、製品群への要求事項を体系的に整理し、それを受け止める適切なソフトウェアアーキテクチャを設計し、 それを踏まえた再利用資産を開発、管理することが必要となります。こうした高度な体系化の手法やそのための技術について研究しています。
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+          ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+          ipsum
         </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" bsModal #detailModal4="bs-modal" [config]="{backdrop: 'true'}"
-     tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  bsModal
+  #detailModal4="bs-modal"
+  [config]="{backdrop: 'true'}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title pull-left" translate>Other Technologies(その他の分野)</h4>
-        <button type="button" class="close pull-right" aria-label="Close" (click)="detailModal4.hide()">
+        <h4 class="modal-title pull-left">
+          Investigacion Docente
+        </h4>
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="detailModal4.hide()"
+        >
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img src="assets/img/research/about4.png" width="300px" height="auto">
-        <br/><br/>
-        <p translate>
-          岸研究室では主な３つに加えて様々な分野に取り組んでいます。近年盛んになっているIoT、機械学習、モダンWeb、モバイルアプリ、VR/AR、ビジュアルプログラミングなどの最新技術についても取り組んでおります。</p>
+        <img src="assets/img/research/about4.png" width="300px" height="auto" />
+        <br /><br />
+        <p>
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+          ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+          ipsum
+        </p>
       </div>
     </div>
   </div>
 </div>
 
-
-
-<br/><br/><br/>
-
+<br /><br /><br />
