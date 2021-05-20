@@ -14,13 +14,13 @@ import { Title } from '@angular/platform-browser';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
   isMobile = false;
   nowlocationpath: string;
   location: Location;
-  currentLang: string
+  currentLang: string;
   subscription: Subscription;
 
   constructor(
@@ -37,27 +37,25 @@ export class AppComponent implements OnInit {
       this.currentLang = data;
     });
 
-    this.subscription = this.deviceService.isDeviceMobile.subscribe(isDeviceMobile => {
-      this.isMobile = isDeviceMobile;
-    });
+    this.subscription = this.deviceService.isDeviceMobile.subscribe(
+      isDeviceMobile => {
+        this.isMobile = isDeviceMobile;
+      }
+    );
 
     this.translate.setDefaultLang(this.currentLang);
     this.translate.use(this.currentLang);
   }
 
   ngOnInit() {
-    // スクロール位置修正追加
-    this.router.events.subscribe((evt) => {
+    this.router.events.subscribe(evt => {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     });
 
-    // titleとdescription追加
-    // this.setDescription(this.description);
-    this.setTitle('早稲田大学 岸研究室 ソフトウェア工学 - Waseda univ. Kishi-Lab Software Engineering -');
-
+    this.setTitle('Universidad Catolica Boliviana San Pablo Regional La Paz');
   }
 
   clickLanTab(lang) {
@@ -69,26 +67,24 @@ export class AppComponent implements OnInit {
   }
 
   clickTab(dest: string): void {
-    // Ideal...
-    // this.router.navigate([dest]);
     switch (dest) {
       case '/home':
-        this.router.navigate(["/home"]);
+        this.router.navigate(['/home']);
         break;
       case '/about':
-        this.router.navigate(["/about"]);
+        this.router.navigate(['/about']);
         break;
       case '/activity':
-        this.router.navigate(["/activity"]);
+        this.router.navigate(['/activity']);
         break;
       case '/research':
-        this.router.navigate(["/research"]);
+        this.router.navigate(['/research']);
         break;
       case '/contact':
-        this.router.navigate(["/contact"]);
+        this.router.navigate(['/contact']);
         break;
       case '/publication':
-        this.router.navigate(["/publication"]);
+        this.router.navigate(['/publication']);
         break;
       default:
         console.log('no routing');
@@ -96,11 +92,10 @@ export class AppComponent implements OnInit {
   }
 
   isActive(dest: string): boolean {
-    return (dest == this.location.path());
+    return dest == this.location.path();
   }
 
   setTitle(title: string) {
     this.title.setTitle(title);
   }
-
 }
